@@ -8,7 +8,7 @@ public class App02HelloWorldSpring {
 
         try (var context =
                      new AnnotationConfigApplicationContext
-                             (GamingConfiguration.class);
+                             (HelloWorldConfiguration.class);
         ) {
           //  System.out.println(context.getBean("name"));
             System.out.println(context.getBean("age"));

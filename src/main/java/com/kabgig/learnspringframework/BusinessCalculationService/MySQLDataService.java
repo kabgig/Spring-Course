@@ -1,8 +1,9 @@
 package com.kabgig.learnspringframework.BusinessCalculationService;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+//@Component
+@Repository
 class MySQLDataService implements DataService {
     @Override
     public int[] retrieveData() {

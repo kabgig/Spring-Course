@@ -1,5 +1,6 @@
 package com.kabgig.learnspringframework.examples.h1;
 
+import com.kabgig.learnspringframework.game.GameRunner;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.util.Arrays;
 
@@ -15,6 +16,7 @@ public class XmlConfigurationContextLauncherApplication {
 
             System.out.println(context.getBean("name"));
             System.out.println(context.getBean("age"));
+            context.getBean(GameRunner.class).run();
         }
     }
 }
